@@ -14,8 +14,8 @@ import { Wrapper } from './styles';
 
 export class LoginContainer extends React.Component {
     state = {
-        email: 'max@test.com',
-        password: '12345',
+        email: '',
+        password: '',
         validFields: {
             email: {
                 valid: null,
@@ -151,7 +151,7 @@ export class LoginContainer extends React.Component {
                     <Btn
                         type='submit'
                         title='Вход'
-                        //disabled={!this.validForm()}
+                        disabled={ !this.validForm() }
                     />
                 </form>
             </Wrapper>
